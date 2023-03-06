@@ -1,0 +1,13 @@
+body{
+  margin: 5px 0;
+}
+
+.card{
+  border-radius: 2px;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+
+}

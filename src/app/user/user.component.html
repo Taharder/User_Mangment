@@ -1,0 +1,25 @@
+<div class="container-fluid g-0 p-2">
+    <div class="row g-0">
+    </div>
+</div>
+        <div class="card">
+            <div class="img-event">
+                <img class="group list-group-image img-fluid rounded" src="{{user.image}}"    alt="" />
+            </div>
+            <div class="caption card-body">
+                <h4 class="group card-title inner list-group-item-heading">
+                 {{user.first_name }} {{user.last_name }}</h4>
+
+            </div>
+            <hr>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <hr>
+                <button type="button" (click)="detailUserClicked(user._id)" class="btn btn-outline-info">Dtail</button>
+                <button type="button"(click)="editUserClicked(user._id)"  class="btn btn-outline-success">Actualizar</button>
+                <button type="button" (click)="deleteUserClicked(user._id)"  class="btn btn-outline-danger">Borrar</button>
+              </div>
+              <br>
+        </div>
+   
+
+    

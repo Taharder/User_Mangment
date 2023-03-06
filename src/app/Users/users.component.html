@@ -1,0 +1,16 @@
+<main>
+    <div class="container d-flex flex-wrap align-items-center">
+      <div class="row mt-5" *ngIf="users.length == 0">
+        <div class="col text-center">
+          <span class="text-secondary fs-2 fw-bold fst-italic">There are No Users Added!</span>
+        </div>
+      </div>
+
+        <div class="row">
+  
+      <div class="col-3" *ngFor="let user of usersToDisplay; let ei = index;">
+          <app-User [user]="user"></app-User>        
+      </div>
+    </div>
+    </div>
+  </main>

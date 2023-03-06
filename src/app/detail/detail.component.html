@@ -1,0 +1,28 @@
+<div class="container-fluid align-items-center m-5">
+<div class="row">
+<div class="col-4">
+    <div class="img-event rounded-3 ">
+
+    <img class="group list-group-image img-fluid rounded-2" style="width: 200px;height: 200px;" src="{{user.image}}"    alt="" />
+</div>
+
+    <div class="caption card-body">
+        <h4 class="group card-title inner list-group-item-heading">
+     {{user.first_name }} {{user.last_name}}</h4>
+    <hr>
+    <h5 class="group list-group-item-heading">
+
+    UserName:</h5> {{user.username }} 
+    <br>
+    <h5 class="group  list-group-item-heading">
+
+        Email:</h5> {{user.email}} 
+
+    </div>
+    <hr>
+<div class="btn-group" role="group" aria-label="Basic example">
+    <button type="button"(click)="editStudentClicked(user._id)"  class="btn btn-outline-success">Actualizar</button>
+    <button type="button" (click)="deleteStudentClicked(user._id)"  class="btn btn-outline-danger">Borrar</button>
+    <button type="button" routerLink="/home" class="btn btn-outline-warning">listado</button>
+</div>
+</div></div></div>
